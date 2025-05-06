@@ -85,6 +85,4 @@ npx prisma db push
 
 Install Prisma Client
 
-npm i @prisma/client
-
 npm install @prisma/client && npx prisma generate

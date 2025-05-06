@@ -1,8 +1,15 @@
 import { addTask } from '@/actions/action';
-import prisma from '@/lib/db';
+import { prisma } from '@/lib/prisma';
 
 export default async function Home() {
-  const tasks = (await prisma.task.findMany()) || [];
+  const tasks = (await prisma.task.findMany()) || [
+    {
+      id: 1,
+      title: 'No tasks found',
+    },
+  ];
+
+  console.log(tasks);
 
   return (
     <div className="bg-zinc-200 flex  min-h-screen flex-col items-center p-10">
