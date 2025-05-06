@@ -1,0 +1,28 @@
+services:
+  ## This is setup for next.js if we want to deploy with docker
+  # app:
+  #   build:
+  #     context: .
+  #   image: task-list
+  #   ports:
+  #     - '3000:3000'
+  #   environment:
+  #     NODE_ENV: development
+  #   develop:
+  #     watch:
+  #       - action: sync
+  #         path: ./src
+  #         target: /app/src
+  #         ignore:
+  #           - node_modules
+  #       - action: rebuild
+  #         path: ./package.json
+  ## setup for db
+  db:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: passtask
+      POSTGRES_USER: userTask
+    ports:
+      - '5432:5432'
