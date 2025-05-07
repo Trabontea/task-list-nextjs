@@ -17,8 +17,9 @@ bun dev
 ## Setup docker
 
 https://www.youtube.com/watch?v=tm70Xa6igbY&t=213s
-// si production
- 
+
+### pe final si punerea in productie
+
 ```bash
 docker init
 ```
@@ -99,3 +100,7 @@ npx prisma db push
 Install Prisma Client
 
 npm install @prisma/client && npx prisma generate
+
+## Prisma Migrate
+
+npx prisma migrate dev --name init
