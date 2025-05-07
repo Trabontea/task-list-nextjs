@@ -17,7 +17,8 @@ bun dev
 ## Setup docker
 
 https://www.youtube.com/watch?v=tm70Xa6igbY&t=213s
-
+// si production
+ 
 ```bash
 docker init
 ```
@@ -49,6 +50,18 @@ https://hub.docker.com/_/postgres
 
 ```bash
 docker compose up
+```
+
+Vizualizare containere care ruleaza
+
+```bash
+docker ps
+```
+
+Docker debug (subscrption pro)
+
+```bash
+docker debug id
 ```
 
 ## Install & Setup Prisma
