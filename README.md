@@ -87,6 +87,8 @@ npx prisma init
 
 Dupa ce setam schema rulam:
 
+## Initial, dupa ce pornim docker rulam:
+
 ```bash
 npx prisma db push
 ```
